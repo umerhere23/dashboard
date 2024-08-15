@@ -1,0 +1,139 @@
+/* Container to center the content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  padding: 16px;
+}
+
+/* Flex container for the cards */
+.cards {
+  display: flex;
+  gap: 100px;
+}
+
+/* Individual card styling */
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 34px;
+  padding: 24px;
+  text-align: center;
+  width: 100%; /* Adjust width to take full available space */
+  max-width: 250px; /* Set maximum width */
+  min-width: 200px; /* Set minimum width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon styling */
+.icon {
+  font-size: 1rem; /* Adjust size as needed */
+  margin-bottom: 16px;
+}
+
+/* Heading styling */
+.card h1 {
+  font-size: 1.0rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+/* Paragraph styling */
+.card p {
+  color: #4a5568;
+  margin: 0;
+}
+
+/* Styling for the long-card container */
+.long-card {
+  width: 80%;
+  margin: 0 auto; /* Center align the card */
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px
+  ;
+  padding: 24px;
+}
+
+/* Styling for the inner-cards container */
+.inner-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Styling for individual card */
+.cardss {
+  flex: 1;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Styling for card content */
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+/* Styling for card icon */
+.card-icon {
+  width: 24px; /* Adjust size of the icon */
+  height: auto;
+}
+
+.tables {
+  width: 95%;
+  margin-left: 5%;
+  
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* Space between cards in column layout */
+  }
+
+  .card {
+    width: 80%; /* Adjust card width for smaller screens */
+    margin-bottom: 16px;
+  }
+
+  .long-card {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .inner-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inner-cards .card {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-bottom: 16px;
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+  .card {
+    width: 30%; /* Adjust card width for larger screens */
+  }
+
+  .long-card {
+    width: 60%; /* Adjust width for larger screens */
+  }
+}
